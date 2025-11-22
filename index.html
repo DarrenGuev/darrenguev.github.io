@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>darrenguev</title>
+    <link rel="icon" type="image/png" href="images/Guevarra_logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -14,10 +15,6 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-
     <div style="background-color: #3B3F4C; min-height: 100vh;">
         <!-- Navbar at the top of the hero -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -66,8 +63,7 @@
     </div>
 
     <!-- About Me Section -->
-    <div id="aboutMe" style="background-color: #232534; min-height: 100vh;" class="d-flex align-items-center">
-        <div class="container px-3 px-md-4 px-lg-5">
+        <div class="container-fluid px-3 px-md-4 px-lg-5 d-flex align-items-center" id="aboutMe" style="background-color: #232534; min-height: 100vh;">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
                     <div class="text-center mb-5" style="padding-top: 60px;">
@@ -81,7 +77,7 @@
                                 style="filter: drop-shadow(0 12px 18px rgba(0,0,0,0.45)); width: 300px; height: auto;">
                         </div>
                         <div class="col-md-6 text-white my-4 mb-md-0 text-center text-md-start">
-                            <h3 class="h4 fw-bold mb-4">Who Am I</h3>
+                            <h3 class="fw-bold mb-4">Who Am I</h3>
                             <p class="lead mb-4">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus eum
                                 dolorum rem beatae at, assumenda doloremque aliquid inventore non corrupti, et
@@ -113,7 +109,6 @@
                                             <span class="badge border">JavaScript</span>
                                             <span class="badge border">Python</span>
                                             <span class="badge border">Flask</span>
-                                            <span class="badge border">Selemium</span>
                                         </div>
                                     </div>
                                 </div>
@@ -138,11 +133,9 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Project Section -->
-    <div id="projects" style="background-color: #3B3F4C; min-height: 100vh;">
-        <div class="container">
+        <div class="container-fluid pb-5" id="projects" style="background-color: #3B3F4C; min-height: 100vh;">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 ">
                     <div class="text-center mb-5" style="padding-top: 60px;">
@@ -188,17 +181,15 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div style="background-color: #1B1D2A; min-height: 10vh; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-        <div class="container p-3">
+        <div class="container-fluid p-3" style="background-color: #1B1D2A; min-height: 10vh; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
             <div class="row justify-content-center align-items-center">
                 <div
                     class="col-md-4 text-white d-flex justify-content-center align-items-center text-center pt-3 pt-md-0">
                     <p class="mb-0">Created by <b>Darren</b></p>
                 </div>
                 <div class="col-md-4 text-black d-flex justify-content-center align-items-center text-center">
-                    <img src="images/logo.png" alt="footer logo" style="height: 140px;">
+                    <img src="images/Guevarra_logo.png" alt="footer logo" style="height: 140px;">
                 </div>
                 <div
                     class="col-md-4 text-black d-flex justify-content-center align-items-center text-center pb-3 pb-md-0">
@@ -212,8 +203,10 @@
                 </div>
             </div>
         </div>
-    </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
