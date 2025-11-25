@@ -1,3 +1,40 @@
 body {
     font-family: 'Poppins';
 }
+
+/* Background Animation */
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.orb-1 {
+    width: 600px;
+    height: 600px;
+    background-color: #7c3aed; /* Violet */
+    top: 60%;
+    left: -350px;
+    animation: moveRight 55s linear infinite;
+}
+
+.orb-2 {
+    width: 800px;
+    height: 800px;
+    background-color: #06b6d4; /* Cyan */
+    bottom: 50%;
+    left: -450px;
+    animation: moveRight 75s linear infinite;
+    animation-delay: 1s; /* Stagger the start */
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-20vw);
+    }
+    100% {
+        transform: translateX(120vw);
+    }
+}
