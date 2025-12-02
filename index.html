@@ -14,138 +14,146 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="150" tabindex="0">
     <!-- Animated Background -->
     <div class="position-fixed w-100 h-100 top-0 start-0 z-n1 overflow-hidden" style="background-color: #0f172a;">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
     </div>
 
-    <div style="min-height: 100vh;">
-        <!-- Navbar at the top of the hero -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <div class="container px-3 px-md-4 px-lg-5">
-                <a class="navbar-brand fs-1 fw-bold" href="#">Darren</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link fs-5 active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link fs-5 px-md-5" href="index.html#aboutMe">About</a>
-                        <a class="nav-link fs-5 me-5 me-md-5 me-lg-5" href="index.html#projects">Projects</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <!-- navbar -->
+    <div class="sticky-top z-3 px-3 pb-3">
+        <div id="mainNav"
+            class="container rounded-bottom-4 glass p-3 p-md-4 mt-3 mt-md-4 border text-center d-flex justify-content-center gap-5">
+            <a href="#aboutMe" class="nav-link text-white h6 mb-0 fs-5 fw-semibold bi bi-person"> About</a>
+            <a href="#activities" class="nav-link text-white h6 mb-0 fs-5 fw-semibold bi bi-list"> Activities</a>
+        </div>
+    </div>
 
-        <!-- About Me Section -->
-        <div class="container-fluid px-3 px-md-4 px-lg-5 d-flex align-items-center" id="aboutMe"
-            style="min-height: 100vh;">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-9">
+    <!-- About Me Section -->
+    <div class="py-2">
+        <div class="container">
 
-                    <div class="row">
-                        <!-- Image Column -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-4">
-                            <div class="sticky-top p-4 rounded-3 shadow"
-                                style="top: 100px; z-index: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-5 col-lg-12 text-center">
-                                        <img src="images/formal_pic.jpg" alt="Profile"
-                                            class="rounded img-fluid mb-4 mb-md-0 mb-lg-4 d-block mx-auto"
-                                            style="filter: drop-shadow(0 12px 18px rgba(0,0,0,0.45)); width: 300px; height: auto;">
+            <div class="row">
+                <!-- Image Column -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-4">
+                    <div class="sticky-top p-4 rounded-3 shadow"
+                        style="top: 50px; z-index: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-5 col-lg-12 text-center">
+                                <img src="images/formal_pic.jpg" alt="Profile"
+                                    class="rounded img-fluid mb-4 mb-md-0 mb-lg-4 d-block mx-auto"
+                                    style="filter: drop-shadow(0 12px 18px rgba(0,0,0,0.45)); width: 300px; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-12">
+                                <div class="text-white text-start">
+                                    <h4 class="mb-4 text-center text-md-start text-lg-center">Marc Darren Guevarra</h4>
+
+                                    <div class="mb-3">
+                                        <div class="text-white-50 small fw-bold text-uppercase">Email</div>
+                                        <a href="mailto:marcdarrenguev08@gmail.com"
+                                            class="text-white text-decoration-none text-break">marcdarrenguev08@gmail.com</a>
                                     </div>
-                                    <div class="col-12 col-md-7 col-lg-12">
-                                        <div class="text-white text-start">
-                                            <h4 class="mb-4 text-center text-md-start text-lg-center">Marc Darren Guevarra</h4>
 
-                                            <div class="mb-3">
-                                                <div class="text-white-50 small fw-bold text-uppercase">Email</div>
-                                                <a href="mailto:marcdarrenguev08@gmail.com"
-                                                    class="text-white text-decoration-none text-break">marcdarrenguev08@gmail.com</a>
-                                            </div>
+                                    <div class="mb-3">
+                                        <div class="text-white-50 small fw-bold text-uppercase">Phone</div>
+                                        <div>upon request</div>
+                                    </div>
 
-                                            <div class="mb-3">
-                                                <div class="text-white-50 small fw-bold text-uppercase">Phone</div>
-                                                <div>upon request</div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <div class="text-white-50 small fw-bold text-uppercase">Location</div>
-                                                <div>Batangas, Philippines</div>
-                                            </div>
-                                        </div>
+                                    <div class="mb-3">
+                                        <div class="text-white-50 small fw-bold text-uppercase">Location</div>
+                                        <div>Batangas, Philippines</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Content Column -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                            <div class="p-4 rounded-3 shadow h-100 text-white"
-                                style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <!-- Who Am I -->
-                                <div class="mb-5 text-md-start">
-                                    <h3 class="fw-bold mb-4">About Me</h3>
-                                    <p class="mb-4">
-                                        Hi! I'm Marc Darren Guevarra, an aspiring Software QA and a 3rd-year BSIT
-                                        student at PUP Sto. Tomas Campus. I have basic skills in software testing,
-                                        making test cases, and reporting bugs. I also know the basics of web
-                                        development, which helps me understand how apps work. I’ve also completed some
-                                        certifications and workshops that helped me gain more knowledge and skills in
-                                        QA.
-                                    </p>
-                                    <p class="mb-4">
-                                        I’m passionate about improving the quality of applications and making sure users
-                                        have a smooth experience. As I continue my studies, I aim to grow my skills in
-                                        both manual and automation testing and become a reliable QA professional in the
-                                        future.
-                                    </p>
+                <!-- Content Column -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8" id="aboutMe">
+                    <div class="p-4 rounded-3 shadow h-100 text-white"
+                        style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <!-- Who Am I -->
+                        <div class="mb-5 text-md-start">
+                            <h3 class="fw-bold mb-4">About Me</h3>
+                            <p class="mb-4">
+                                Hi! I'm Marc Darren Guevarra, an aspiring Software QA and a 3rd-year BSIT
+                                student at PUP Sto. Tomas Campus. I have basic skills in software testing,
+                                making test cases, and reporting bugs. I also know the basics of web
+                                development, which helps me understand how apps work. I’ve also completed some
+                                certifications and workshops that helped me gain more knowledge and skills in
+                                QA.
+                            </p>
+                            <p class="mb-4">
+                                I’m passionate about improving the quality of applications and making sure users
+                                have a smooth experience. As I continue my studies, I aim to grow my skills in
+                                both manual and automation testing and become a reliable QA professional in the
+                                future.
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack Section -->
+                        <div>
+                            <div class="text-md-start mb-4">
+                                <h3 class="h3 fw-bold text-white mb-3">Tech Stacks</h3>
+                            </div>
+
+                            <div class="row g-3">
+                                <!-- Programming Languages -->
+                                <div class="col-12 col-lg-6">
+                                    <div class="rounded p-4 h-100 text-center" style="background: rgba(0, 0, 0, 0.2);">
+                                        <div class="mb-3">
+                                            <i class="bi bi-code-slash fs-1" style="color: #FF9900;"></i>
+                                        </div>
+                                        <h5 class="text-white fw-bold mb-3">Languages</h5>
+                                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                                            <span class="badge border">HTML</span>
+                                            <span class="badge border">CSS</span>
+                                            <span class="badge border">JavaScript</span>
+                                            <span class="badge border">Python</span>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <!-- Tech Stack Section -->
-                                <div>
-                                    <div class="text-md-start mb-4">
-                                        <h3 class="h3 fw-bold text-white mb-3">Tech Stack & Tools</h3>
-                                        <p class="text-white-50">Technologies and tools I work with</p>
-                                    </div>
-
-                                    <div class="row g-3">
-                                        <!-- Programming Languages -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="rounded p-4 h-100 text-center"
-                                                style="background: rgba(0, 0, 0, 0.2);">
-                                                <div class="mb-3">
-                                                    <i class="bi bi-code-slash fs-1" style="color: #FF9900;"></i>
-                                                </div>
-                                                <h5 class="text-white fw-bold mb-3">Languages</h5>
-                                                <div class="d-flex flex-wrap justify-content-center gap-2">
-                                                    <span class="badge border">HTML</span>
-                                                    <span class="badge border">CSS</span>
-                                                    <span class="badge border">JavaScript</span>
-                                                    <span class="badge border">Python</span>
-                                                    <span class="badge border">Flask</span>
-                                                </div>
-                                            </div>
+                                <!-- Databases & Other Tools -->
+                                <div class="col-12 col-lg-6">
+                                    <div class="rounded p-4 h-100 text-center" style="background: rgba(0, 0, 0, 0.2);">
+                                        <div class="mb-3">
+                                            <i class="bi bi-gear fs-1" style="color: #FF9900;"></i>
                                         </div>
+                                        <h5 class="text-white fw-bold mb-3">Tools & Databases</h5>
+                                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                                            <span class="badge border">MySQL</span>
+                                            <span class="badge border">Git</span>
+                                            <span class="badge border">Figma</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                        <!-- Databases & Other Tools -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="rounded p-4 h-100 text-center"
-                                                style="background: rgba(0, 0, 0, 0.2);">
-                                                <div class="mb-3">
-                                                    <i class="bi bi-gear fs-1" style="color: #FF9900;"></i>
-                                                </div>
-                                                <h5 class="text-white fw-bold mb-3">Tools & Databases</h5>
-                                                <div class="d-flex flex-wrap justify-content-center gap-2">
-                                                    <span class="badge border">MySQL</span>
-                                                    <span class="badge border">Git</span>
-                                                    <span class="badge border">Figma</span>
-                                                </div>
-                                            </div>
+                                <!-- frameworks -->
+                                <div class="col-12 col-lg-6"> <!--  col-lg-12 for now -->
+                                    <div class="rounded p-4 h-150 text-center" style="background: rgba(0, 0, 0, 0.2);">
+                                        <div class="mb-3">
+                                            <i class="bi bi-code-slash fs-1" style="color: #FF9900;"></i>
+                                        </div>
+                                        <h5 class="text-white fw-bold mb-3">Frameworks</h5>
+                                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                                            <span class="badge border">Bootstrap</span>
+                                            <span class="badge border">Flask</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- automation -->
+                                <div class="col-12 col-lg-6"> <!--  col-lg-12 for now -->
+                                    <div class="rounded p-4 h-150 text-center" style="background: rgba(0, 0, 0, 0.2);">
+                                        <div class="mb-3">
+                                            <i class="bi bi-code-slash fs-1" style="color: #FF9900;"></i>
+                                        </div>
+                                        <h5 class="text-white fw-bold mb-3">Automation Frameworks</h5>
+                                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                                            <span class="badge border">Playwright</span>
                                         </div>
                                     </div>
                                 </div>
@@ -155,97 +163,93 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Project Section -->
-        <div class="container-fluid pb-5" id="projects" style="min-height: 100vh;">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 ">
-                    <div class="text-center mb-5" style="padding-top: 60px;">
-                        <h2 class="display-4 fw-bold text-white mb-4">Projects</h2>
-                        <div class="mx-auto" style="width: 80px; height: 4px; background-color: #FF9900;"></div>
+    <!-- Project Section -->
+    <div class="pb-5" id="activities" style="min-height: 100vh;">
+        <div class="container">
+            <div class="text-center mb-5" style="padding-top: 60px;">
+                <h2 class="display-4 fw-bold text-white mb-4">Activities</h2>
+                <div class="mx-auto" style="width: 80px; height: 4px; background-color: #FF9900;"></div>
+            </div>
+            <div class="row mt-4 g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow border-0 rounded-4"
+                        style="width:100%;overflow:hidden;backdrop-filter:blur(10px);color:#fff;">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://darrenguev.github.io/Iphone-13/" title="Project 1" loading="lazy"
+                                allowfullscreen style="border:0;"></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-dark">Activity 4</h5>
+                            <p class="card-text text-dark">
+                                Showcase iPhone 13.
+                            </p>
+                            <a target="_blank" href="https://darrenguev.github.io/Iphone-13/"
+                                class="btn btn-secondary btn-sm"><i class="mx-2 bi bi-globe"></i>View Site</a>
+                        </div>
                     </div>
-                    <div class="row mt-4 g-4">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card shadow border-0 rounded-4"
-                                style="width:100%;overflow:hidden;backdrop-filter:blur(10px);color:#fff;">
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://darrenguev.github.io/Iphone-13/" title="Project 1"
-                                        loading="lazy" allowfullscreen style="border:0;"></iframe>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold text-dark">Activity 4</h5>
-                                    <p class="card-text text-dark">
-                                        Showcase iPhone 13.
-                                    </p>
-                                    <a target="_blank" href="https://darrenguev.github.io/Iphone-13/"
-                                        class="btn btn-secondary btn-sm"><i class="mx-2 bi bi-globe"></i>View Site</a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow border-0 rounded-4"
+                        style="width:100%;overflow:hidden;backdrop-filter:blur(10px);color:#fff;">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://darrenguev.github.io/Schwarzsee-Switzerland/" title="Project 2"
+                                loading="lazy" allowfullscreen style="border:0;"></iframe>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card shadow border-0 rounded-4"
-                                style="width:100%;overflow:hidden;backdrop-filter:blur(10px);color:#fff;">
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://darrenguev.github.io/Schwarzsee-Switzerland/" title="Project 2"
-                                        loading="lazy" allowfullscreen style="border:0;"></iframe>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold text-dark">Activity 5</h5>
-                                    <p class="card-text text-dark">
-                                        Showcase of Schwarzsee, Switzerland.
-                                    </p>
-                                    <a target="_blank" href="https://darrenguev.github.io/Schwarzsee-Switzerland/"
-                                        class="btn btn-secondary btn-sm"><i class="mx-2 bi bi-globe"></i>View Site</a>
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-dark">Activity 5</h5>
+                            <p class="card-text text-dark">
+                                Showcase of Schwarzsee, Switzerland.
+                            </p>
+                            <a target="_blank" href="https://darrenguev.github.io/Schwarzsee-Switzerland/"
+                                class="btn btn-secondary btn-sm"><i class="mx-2 bi bi-globe"></i>View Site</a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card shadow border-0 rounded-4"
-                                style="width:100%;overflow:hidden;backdrop-filter:blur(10px);color:#fff;">
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://darrenguev.github.io/Gallery/" title="Project 1" loading="lazy"
-                                        allowfullscreen style="border:0;"></iframe>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold text-dark">Activity 6</h5>
-                                    <p class="card-text text-dark">
-                                        Showcase One Piece-Strawhat Crew Gallery.
-                                    </p>
-                                    <a target="_blank" href="https://darrenguev.github.io/Gallery/"
-                                        class="btn btn-secondary btn-sm"><i class="mx-2 bi bi-globe"></i>View Site</a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow border-0 rounded-4"
+                        style="width:100%;overflow:hidden;backdrop-filter:blur(10px);color:#fff;">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://darrenguev.github.io/Gallery/" title="Project 1" loading="lazy"
+                                allowfullscreen style="border:0;"></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-dark">Activity 6</h5>
+                            <p class="card-text text-dark">
+                                Showcase One Piece-Strawhat Crew Gallery.
+                            </p>
+                            <a target="_blank" href="https://darrenguev.github.io/Gallery/"
+                                class="btn btn-secondary btn-sm"><i class="mx-2 bi bi-globe"></i>View Site</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid p-3 rounded-5" style="min-height: 10vh; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-            <div class="row justify-content-center align-items-center">
-                <div
-                    class="col-md-4 text-white d-flex justify-content-center align-items-center text-center pt-3 pt-md-0">
-                    <p class="mb-0">Created by <b>Darren</b></p>
-                </div>
-                <div class="col-md-4 text-black d-flex justify-content-center align-items-center text-center">
-                    <img src="images/Guevarra_logo.png" alt="footer logo" style="height: 140px;">
-                </div>
-                <div
-                    class="col-md-4 text-black d-flex justify-content-center align-items-center text-center pb-3 pb-md-0">
-                    <a href="https://github.com/DarrenGuev" class="btn btn-outline-light btn-lg me-2"
-                        aria-label="GitHub"><i class="bi bi-github fs-4"></i></a>
-                    <a href="https://www.facebook.com/MDFG.NERRAD/" class="btn btn-outline-light btn-lg me-2"
-                        aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
-                    <a href="https://www.linkedin.com/in/darren-guevarra-21644b363/"
-                        class="btn btn-outline-light btn-lg" aria-label="LinkedIn"><i
-                            class="bi bi-linkedin fs-4"></i></a>
-                </div>
+    <div class="container-fluid p-3 rounded-top-5 glass" style="min-height: 10vh">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-white d-flex justify-content-center align-items-center text-center pt-3 pt-md-0">
+                <p class="mb-0">Created by <b>Darren</b></p>
+            </div>
+            <div class="col-md-4 text-black d-flex justify-content-center align-items-center text-center">
+                <img src="images/Guevarra_logo.png" alt="footer logo" style="height: 140px;">
+            </div>
+            <div class="col-md-4 text-black d-flex justify-content-center align-items-center text-center pb-3 pb-md-0">
+                <a href="https://github.com/DarrenGuev" class="btn btn-outline-light btn-lg me-2" aria-label="GitHub"><i
+                        class="bi bi-github fs-4"></i></a>
+                <a href="https://www.facebook.com/MDFG.NERRAD/" class="btn btn-outline-light btn-lg me-2"
+                    aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="https://www.linkedin.com/in/darren-guevarra-21644b363/" class="btn btn-outline-light btn-lg"
+                    aria-label="LinkedIn"><i class="bi bi-linkedin fs-4"></i></a>
             </div>
         </div>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

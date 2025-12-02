@@ -14,19 +14,19 @@ body {
 .orb-1 {
     width: 600px;
     height: 600px;
-    background-color: #7c3aed; /* Violet */
+    background-color: #7c3aed;
     top: 60%;
     left: -350px;
-    animation: moveRight 55s linear infinite;
+    animation: moveRight 40s linear infinite;
 }
 
 .orb-2 {
     width: 800px;
     height: 800px;
-    background-color: #06b6d4; /* Cyan */
+    background-color: #06b6d4; 
     bottom: 50%;
     left: -450px;
-    animation: moveRight 75s linear infinite;
+    animation: moveRight 50s linear infinite;
     animation-delay: 1s; /* Stagger the start */
 }
 
@@ -37,4 +37,17 @@ body {
     100% {
         transform: translateX(120vw);
     }
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#mainNav .nav-link.active {
+    font-weight: 700 !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
