@@ -18,7 +18,7 @@ var activities = [
     "subTitle": "One Piece-Strawhat Crew Gallery.",
   },
   {
-    "link": "under construction",
+    "link": "https://darrenguev.github.io/WebDev-API/",
     "title": "DotaPedia Website",
     "activityNumber": "Activity 7",
     "subTitle": "DotaPedia Website",
